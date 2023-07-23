@@ -1,0 +1,74 @@
+body {
+    background-color: #000;
+    color: #00ff00;
+    font-family: monospace;
+}
+
+#terminal {
+    padding: 20px;
+}
+
+#output {
+    margin-bottom: 10px;
+}
+
+#input {
+    background-color: #000;
+    border: none;
+    color: #00ff00;
+    outline: none;
+    width: 100%;
+    font-family: monospace;
+}
+
+.cursor {
+    color: #00ff00;
+}
+
+.blink {
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+pre {
+    font-family: "Courier New", monospace;
+    white-space: pre-wrap;
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+
+  pre.edl {
+    font-family: "Courier New", monospace;
+    white-space: pre-wrap;
+    font-size: 28px; /* Adjust the font size as needed */
+    animation: rainbow 4s infinite; /* Adjust the animation duration as needed */
+  }
+  
+  @keyframes rainbow {
+    0% {
+      color: red;
+    }
+    16% {
+      color: orange;
+    }
+    33% {
+      color: yellow;
+    }
+    50% {
+      color: green;
+    }
+    66% {
+      color: blue;
+    }
+    83% {
+      color: indigo;
+    }
+    100% {
+      color: violet;
+    }
+  }
+  
